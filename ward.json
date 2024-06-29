@@ -1,0 +1,18 @@
+{
+    "familyName" : "Smith",
+    "numberOfFamilyMembers" : 6,
+    "dateMovedIn" : "2018-05-06",
+    "visitedBishopric" : true,
+    "members" : [
+      {
+        "name" : "Susan Smith",
+        "birthdate" : "2006-07-06",
+        "gender" : "Male"
+             },
+      {
+        "name" : "Robert Smith",
+        "birthdate" : "2009-06-05",
+        "gender" : "Male"
+              }
+         ]
+  }
