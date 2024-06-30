@@ -1,24 +1,79 @@
-<!DOCTYPE html5>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive Nav using CSS Flexbox</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="navbar">
-        <h2><a href="#">BrandName</a></h2>
-        <nav>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </body>
+<!doctype html5>
+<lang="en-US">
+
+    <link rel="stylesheet" href="styles.css">
+
+
+
+    
+<body>     
+
+  <title>Derek's Page</title>
+  <img src="me-image.png" 
+  alt="me" class="center";>
+
+  <link rel="icon" href="favicon.ico">
+
+</body>
+
+
+ 
+<div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#chamber">Chamber of Commerce</a>
+  <a href="#github">GitHub Profile</a>
+  <a href="https://www.linkedin.com/">LinkedIn</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+<head>
+
+</head>
+
+<main>   
+<center>
+  <section>
+    <h2>BYU-Idaho</h2>
+    <p>Started a degree several years ago and trying to finish before time runs out.</p>
+    </section>
+    
+    <section>
+    <h2>Almost there</h2>
+    <p>emphasis</p>
+    </section>
+  </center>
+</main>
+
+
+
+
+
+
+
+<td>       
+  <footer>
+    <p><span id="currentyear"></span> Derek Steele, USA
+    </p>
+   
+    <p>
+    <!--LAST MODIFIED-->
+<button onclick="geeks()">
+  Last Modified
+</button>
+<p id="curryear"></p>
+<script>
+  function geeks() {
+      let x = document.lastModified;
+      document.getElementById("curryear").innerHTML = x;
+  }
+</script>
+<!--Close LAST MODIFIED-->
+    </p>
+
+  </footer>
+  </td>
+
 </html>
