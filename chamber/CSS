@@ -3,23 +3,6 @@ header {
 }
 
 
-.container {
-  display: grid;
-  align-items: center; 
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 5px;
- }
- 
- img {
-   max-width:25%;
-   max-height:auto;
- }
- 
- .text {
-   font-size: 70px;
- }
-
-
  
  .column {
    float: left;
