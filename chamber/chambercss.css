@@ -6,7 +6,7 @@ body{
 
 /* Slideshow */
 .section1{
-    background: url(files/home-slideshow-001.jpeg);
+    background: url(https://www.visitarizona.com/imager/s3_us-west-1_amazonaws_com/aot-2020/images/Hero-Images/Phoenix-cityscape_603abd2f6782d45765146edc48eb2baa.jpg);
     height: 90vh;
     background-size: cover;
 }
@@ -28,7 +28,7 @@ body{
 
 /* Footer */
 footer{
-    background: #111111;
+    background: blue
     min-height: 10vh;
     display:flex;
 }
@@ -36,15 +36,15 @@ footer > div {
   flex:1;
 }
 .copyright, p{
-    color: whitesmoke;
+    color: white;
 }
 
 .contact{
-    color: whitesmoke;
+    color: white;
 }
 
 a{
     text-decoration: none;
-    color: whitesmoke;
+    color: white;
 }
 /* End Footer */
