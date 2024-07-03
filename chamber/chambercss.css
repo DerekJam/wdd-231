@@ -36,15 +36,15 @@ footer > div {
   flex:1;
 }
 .copyright, p{
-    color: whitesmoke;
+    color: white;
 }
 
 .contact{
-    color: whitesmoke;
+    color: white;
 }
 
 a{
     text-decoration: none;
-    color: whitesmoke;
+    color: white;
 }
 /* End Footer */
