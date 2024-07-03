@@ -3,20 +3,6 @@ header {
 }
 
 
-
-
-
-
-
-footer {
-  display: block;
-}
-
-
-
-
-
-
 .container {
   display: grid;
   align-items: center; 
@@ -32,3 +18,10 @@ footer {
  .text {
    font-size: 70px;
  }
+
+
+
+
+footer {
+  display: block;
+}
