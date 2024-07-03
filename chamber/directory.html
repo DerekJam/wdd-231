@@ -1,121 +1,39 @@
-<!DOCTYPE html5>
+<!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-@media only screen and (max-width: 620px) {
-  /* For mobile phones: */
-  .menu1, .menu2, .main, .row, .column {
-    width: 100%;
-  }
-}
-</style>
-
-<style>
-  div {background-color: blue;}
-  div a {
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    padding: 15px;
-    display:inline-block;
-  }
-  ul {
-    display: inline;
-    margin: 0;
-    padding: 0;
-  }
-  ul li {display: inline-block;}
-  ul li:hover {background: #555;}
-  ul li:hover ul {display: block;}
-  </style>
-
-
-
-</head>
-
-
-
-
-
-  
-  
-<style>
-  footer {
-    text-align: center;
-    padding: 3px;
-    background-color: blue;
-    color: white;
-  }
-  </style>
-
-
-
-
-
-    <div class="main">
-      <ul>
-        <li>
-          <a href="#Home">Home</a>
-        </li>
-        <li>
-          <a href="#chamber">Chamber of Commerce</a>
-        </li>
-        <li>
-          <a href="#github">GitHub Profile</a>
-        </li>
-        <li><a href="https://www.linkedin.com">LinkedIn</a></li>
-      </ul>
-    </div>
-  </div>
-
-
- 
-
-  <div class="row">
-    <div class="column">
-        <div id="weather"></div>
-        <script type='text/javascript' src='https://www.worldweatheronline.com/widget/v5/weather-widget.ashx?loc=2542105&wid=1&tu=1&div=wwo-weather-widget-1' async>
-        </script>
-        <noscript><a href="https://www.worldweatheronline.com/phoenix-weather/arizona/us.aspx" alt="Hour by hour Phoenix weather">Phoenix weather forecast hourly</a>
-        </noscript>
-    </div>
-    <div class="column"></div>
-    <div class="column"></div>
-  </div>
-  
-
-
-
-
-
-
-
-
-
-<div> 
-<td>       
-  <footer>
-  <p><span id="currentyear"></span>WDD231 Class Project | Derek J. Steele, USA
-  </p>
- 
-  <p>
-  <!--LAST MODIFIED-->
-<button onclick="geeks()">
-Last Modified
-</button>
-<p id="curryear"></p>
-<script>
-function geeks() {
-    let x = document.lastModified;
-    document.getElementById("curryear").innerHTML = x;
-}
-</script>
-<!--Close LAST MODIFIED-->
-  </p>
-
-</footer>
-</td>
-</div>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <title>Home - Motive Media Productions</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Oswald:500,600,700" rel="stylesheet">
+    </head>
+    <body>
+        <div class="section1">
+            <div id="overlay">
+                <h1>Text</h1>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <div class="copyright">
+            <p>&copy; 2018</p>
+        </div>
+        <div class="brands">
+            <div class="social-media">
+                    <a href="http://www.facebook.com/" target="_blank">
+                        <img src="files/facebook.png"></a>
+                    <a href="http://www.instagram.com/" target="_blank">
+                        <img src="files/instagram.png"></a>
+                    <a href="http://www.twitter.com/" target="_blank">
+                        <img src="files/twitter.png"></a>
+            </div>
+        </div>
+        <div class="contact">
+            <li class="contact-list">
+                <a href="00">00</a>
+            </li>
+            <li class="contact-list">
+                <a href="mailto:hi@hi.com">hi@hi.com</a>
+            </li>
+        </div>
+    </footer>
 </html>
