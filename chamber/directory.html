@@ -3,11 +3,18 @@
  
 <head>
     <meta charset="utf-8">
- 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    @media only screen and (max-width: 620px) {
+    /* For mobile phones: */
+    .menu1, .menu2, .main, .container, .text {
+    width: 100%;
+    }
+    }
+    </style>
+
     <title>
-        How to create 3 boxes
-        in the same div using
-        HTML and CSS ?
+       Phoenix, AZ | Chamber of Commerce
     </title>
  
     <style>
@@ -31,7 +38,7 @@
             text-align: center;
         }
  
-        #box1 {
+        #header {
             padding: 10px;
             border: solid 1px green
         }
@@ -79,8 +86,8 @@
  
 <body>
     <div class="box-wrapper">
-        <div id="box1">
-            Box 1
+        <div id="header">
+            Header
         </div>
  
         <div id="box2">
