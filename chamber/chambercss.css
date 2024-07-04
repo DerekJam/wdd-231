@@ -10,11 +10,7 @@
     transition: 0.5s;
   }
     
-  .whiteblack{
-    color: white;
-  }
-  
-  
+   
   .header:hover {
     background-color: black;
      filter: invert(1);
