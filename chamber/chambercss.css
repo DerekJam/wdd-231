@@ -2,7 +2,23 @@
 
 
 
-
+  .header {
+    display: flex;
+    justify-content: space-between;
+    background-color:transparent;
+    padding: 20px;
+    transition: 0.5s;
+  }
+    
+  .whiteblack{
+    color: white;
+  }
+  
+  
+  .header:hover {
+    background-color: black;
+     filter: invert(1);
+  }
 
 
 
