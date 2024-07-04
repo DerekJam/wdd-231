@@ -226,13 +226,30 @@
         <div id="box3a">
             <div class="middle-column">
              <div id="box13">
-                <script>
-                    (async () => {
-                      raw = await fetch('/members.json')
-                      data = await raw.json()
-                    })().catch(console.warn)
-                  </script>
-             </div>
+                <!--begin script for JSON-->
+                <script type="text/javascript">
+                    fetch('members.json')
+                        .then(function (response) {
+                            return response.json();
+                        })
+                        .then(function (data) {
+                            appendData(data);
+                        })
+                        .catch(function (err) {
+                            console.log('error: ' + err);
+                        });
+                
+                    function appendData(data) {
+                        let mainContainer = document.getElementById("myData");
+                        for (let i = 0; i < data.length; i++) {
+                            let div = document.createElement("div");
+                            div.innerHTML = 'Name: ' + data[i].firstName + ' ' + data[i].lastName;
+                            mainContainer.appendChild(div);
+                        }
+                    }
+                </script>
+                <!--close script for JSON-->
+              </div>
             </div>
            
             <div class="middle-column">
