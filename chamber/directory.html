@@ -5,9 +5,7 @@
     <meta charset="utf-8">
  
     <title>
-        How to create 3 boxes
-        in the same div using
-        HTML and CSS ?
+        Phoenix, AZ | Chamber of Commerce
     </title>
  
     <style>
@@ -30,7 +28,13 @@
             flex-direction: column;
             text-align: center;
         }
+
  
+        #header {
+            padding: 10px;
+            border: solid 0px green
+        }
+
         #box1 {
             padding: 10px;
             border: solid 1px green
@@ -79,8 +83,23 @@
  
 <body>
     <div class="box-wrapper">
-        <div id="box1">
-            Box 1
+        <div class="header">
+            <div class="main">
+                <ul>
+                  <li>
+                    <a href="/WDD231/">Home</a>
+                  </li>
+                  <li>
+                    <a href="/WDD231/chamber/directory.html">Directory</a>
+                  </li>
+                  <li>
+                    <a href="/WDD231/chamber/join.html">Join</a>
+                  </li>
+                  <li>
+                    <a href="/WDD231/chamber/discover.html">Discover</a>
+                  </li>
+                </ul>
+              </div>
         </div>
  
         <div id="box2">
