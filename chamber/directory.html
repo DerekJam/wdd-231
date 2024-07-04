@@ -226,13 +226,12 @@
         <div id="box3a">
             <div class="middle-column">
              <div id="box13">
-                <div class="vertical-menu">
-                    <h1>Business 1</h1>
-                    <a>Link 1</a>
-                    <a>Link 2</a>
-                    <a>Link 3</a>
-                    <a>Link 4</a>
-                </div>
+                <script>
+                    (async () => {
+                      raw = await fetch('/members.json')
+                      data = await raw.json()
+                    })().catch(console.warn)
+                  </script>
              </div>
             </div>
            
