@@ -126,7 +126,16 @@
             justify-content: center
         }
 
-      
+        #box14 {
+            padding: 10px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            border: solid 0px green;
+            text align: center;
+            margin: 2%;
+            justify-content: center
+        }
 
         #footer {
             padding: 10px;
@@ -272,15 +281,32 @@
         </div>
 
         
-
+        <!--Start actual footer-->
         <div id="footer">
-            <p>WDD231 Class Project | Derek J. Steele | © Phoenix Chamber of Commerce</p><p></p>
-            <p>Last updated:</p>
-            <p id="date-time"></p>
-            <script>
-                const date = new Date(document.lastModified);
-                document.getElementById("date-time").innerHTML = date;
-            </script>
+
+            <!--start three boxes for footer-->
+            <div id="box14">
+                <div id="box3left">
+                        Box 4
+                </div>
+                <div id="box3center">
+                        Box 5
+                </div>
+                <div id="box3right">
+                    <p>WDD231 Class Project | Derek J. Steele | © Phoenix Chamber of Commerce</p><p></p>
+                    <p>Last updated:</p>
+                    <p id="date-time"></p>
+                    <script>
+                        const date = new Date(document.lastModified);
+                        document.getElementById("date-time").innerHTML = date;
+                    </script>
+                </div>
+            </div>
+            <!--close three boxes for footer-->
+        </div>
+        <!--Close actual footer-->
+
+            
         </div>
     </div>
 </body>
