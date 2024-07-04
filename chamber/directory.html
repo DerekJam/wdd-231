@@ -227,7 +227,7 @@
             <div class="middle-column">
              <div id="box13">
                 <!--begin script for JSON-->
-                
+
                 <table id = "tb1" border = "1">
                     <tr>
                         <th>movieID</th>
@@ -236,7 +236,7 @@
                     </tr>
                 </table>
                 <script>
-                    fetch("/try/mydata.json")
+                    fetch("/chamber/data/members.json")
                         .then(response => response.json())
                         .then(data => {
                             for (var i = 0; i<data.items.length; i++){
