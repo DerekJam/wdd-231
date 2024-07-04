@@ -140,6 +140,26 @@
             padding: 10px;
             border: solid 0px 
         }
+
+        <style>
+  div {background-color: blue;}
+  div a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+    display:inline-block;
+  }
+  ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+  }
+  ul li {display: inline-block;}
+  ul li:hover {background: #555;}
+  ul li:hover ul {display: block;}
+  </style>
+
     </style>
 </head>
  
@@ -149,15 +169,20 @@
     <div class="box-wrapper">
         
         <div class="header">
-            
-            <div class="resume">
-                <div class="resume_class">
-                  <ul>
-                      <h3>Skills</h3>
-                        <li>Languages: C++, Java , C , HTML , PHP</li>
-                       <li>Frameworks: .NET, Zendesk , Solid<br> works NetBeans Rational Rose, SPSS, Maple</li>
-                 </ul>
-                </div>
+            <div class="main">
+                <ul>
+                  <li>
+                    <a href="Home">Home</a>
+                  </li>
+                  <li>
+                    <a href="/WDD231/chamber/directory.html">Chamber of Commerce</a>
+                  </li>
+                  <li>
+                    <a href="#github">GitHub Profile</a>
+                  </li>
+                  <li><a href="https://www.linkedin.com">LinkedIn</a></li>
+                </ul>
+              </div>
         </div>
  
 
