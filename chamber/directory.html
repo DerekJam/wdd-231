@@ -3,11 +3,21 @@
  
 <head>
     <meta charset="utf-8">
- 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    @media only screen and (max-width: 620px) {
+    /* For mobile phones: */
+    .menu1, .menu2, .main, .container, .text {
+    width: 100%;
+    }
+    }
+    </style>
+
     <title>
-        Phoenix, AZ | Chamber of Commerce
+       Phoenix, AZ | Chamber of Commerce
     </title>
- 
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
     <style>
         * {
             margin: 0;
@@ -18,7 +28,7 @@
         body {
             margin: 2%;
             justify-content: center;
-            overflow: hidden;
+            overflow: auto
         }
  
         .box-wrapper {
@@ -26,23 +36,17 @@
             width: 100%;
             display: flex;
             flex-direction: column;
-            text-align: center;
+            text-align: center
         }
-
  
         #header {
             padding: 10px;
             border: solid 0px green
         }
-
-        #box1 {
-            padding: 10px;
-            border: solid 1px green
-        }
  
         #box2 {
             padding: 8px;
-            border: solid 1px blue
+            border: solid 0px blue
         }
  
         #box3 {
@@ -50,24 +54,35 @@
             flex-grow: 1;
             display: flex;
             flex-direction: row;
-            border: solid 1px green
+            border: solid 0px green
         }
  
+        #box3a {
+            padding: 10px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            border: solid 0px green;
+            text align: center;
+            margin: 2%;
+            justify-content: center
+        }
+
         #box4 {
             flex-grow: 2;
-            border: solid 1px orange
+            border: solid 0px orange
         }
  
         .middle-column {
             flex-grow: 1;
             display: flex;
-            flex-direction: column;
+            flex-direction: column
         }
  
         .middle-column div {
             flex-grow: 1;
             margin: 0 8px;
-            border: solid 1px red;
+            border: solid 0px red
         }
  
         .middle-column div+div {
@@ -76,13 +91,97 @@
  
         #box8 {
             flex-grow: 1;
-            border: solid 1px black
+            border: solid 0px black
         }
+
+        .middle-column1 {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column
+        }
+
+        #box9 {
+            flex-grow: 1;
+            border: solid 0px black
+        }
+
+        #box10 {
+            flex-grow: 1;
+            border: solid 0px black
+        }
+
+        #box11 {
+            flex-grow: 1;
+            border: solid 0px black
+        }
+
+        #box13 {
+            padding: 5px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            border: solid 0px pink;
+            text align: center;
+            margin: 2%;
+            justify-content: center
+        }
+
+        #box14 {
+            padding: 10px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: row;
+            border: solid 0px green
+        }
+
+        #box3left {
+            flex-grow: 2;
+            border: solid 0px orange
+        }
+
+        #footer {
+            padding: 10px;
+            border: solid 0px 
+        }
+
+
+        .vertical-menu a {
+  background-color: white;
+  color: black;
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+}
+
+
+
+        <style>
+  div {background-color: blue;}
+  div a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding: 15px;
+    display:inline-block;
+  }
+  ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+  }
+  ul li {display: inline-block;}
+  ul li:hover {background: yellow;}
+  ul li:hover ul {display: block;}
+  </style>
+
     </style>
 </head>
  
+
+
 <body>
     <div class="box-wrapper">
+        
         <div class="header">
             <div class="main">
                 <ul>
@@ -102,35 +201,127 @@
               </div>
         </div>
  
+
+
         <div id="box2">
-                        
-                <div class="image">
-                    <img src="https://www.visitarizona.com/imager/s3_us-west-1_amazonaws_com/aot-2020/images/Hero-Images/Phoenix-cityscape_603abd2f6782d45765146edc48eb2baa.jpg" width="100%" height="auto">
-                  </div>
-                  <div class="text">
-                    <h1>Phoenix, Arizona</h1>
-                  </div>
-            
+            <div class="image">
+                <img src="https://www.visitarizona.com/imager/s3_us-west-1_amazonaws_com/aot-2020/images/Hero-Images/Phoenix-cityscape_603abd2f6782d45765146edc48eb2baa.jpg" width="100%" height="auto">
+              </div>
+              <div class="text">
+                <h1>Phoenix, Arizona</h1>
+              </div>
         </div>
  
-        <div id="box3">
-            <div id="box4">
-                Box 4
+       
+
+
+        <!--Need 3 equal sizes-->
+        <div id="box3a">
+            <div class="text">
+             <div id="box13">
+                <!--begin script for JSON-->
+
+                <table id = "tb1" border = "0">
+                    <tr>
+                        <th>business name 1</th>
+                        <th>business tagline 1</th>
+                        <th>email 1</th>
+                        <th>phone 1</th>
+                        <th>URL 1</th>
+                    </tr>
+                    <tr>
+                        <th>business name 2</th>
+                        <th>business tagline 2</th>
+                        <th>email 2</th>
+                        <th>phone 2</th>
+                        <th>URL 2</th>
+                    </tr>
+                    <tr>
+                        <th>business name 3</th>
+                        <th>business tagline 3</th>
+                        <th>email 3</th>
+                        <th>phone 3</th>
+                        <th>URL 3</th>
+                    </tr>
+                </table>
+                <script>
+                    fetch("/chamber/data/members.json")
+                        .then(response => response.json())
+                        .then(data => {
+                            for (var i = 0; i<data.items.length; i++){
+                                let vbizname = data.items[i].bizname;
+                                let vbiztag = data.items[i].biztag;
+                                let vemail = data.items[i].email;
+                                let vphone = data.items[i].phone;
+                                let vurl = data.items[1].url;
+                                    document.querySelector("#tb1").innerHTML += `
+                                        <tr>
+                                            <td>${vbizname}</td>
+                                            <td>${vbiztag}</td>
+                                            <td>${vemail}</td>
+                                            <td>${vphone}</td>
+                                            <td>${vurl}</td>
+                                        </tr>`;
+                            }
+                        })
+                </script>
+               
+                <!--close script for JSON-->
+              </div>
             </div>
-            <div class="middle-column">
-                <div id="box5">
-                    Box 5
+           
+        </div>
+
+        
+        <!--Start actual footer-->
+        <div id="footer">
+
+            <!--start three boxes for footer-->
+            <div id="box14">
+                <div id="box3left" input type="text" style="text-align: left">
+                    <p>Phoenix Chamber of Commerce</p>
+                    <p>Place chamber info</p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
                 </div>
-                <div id="box6">
-                    Box 6
+                <div class="middle-column"></div>
+                <div id="box3center" input type="text" style="text-align: center">
+                    
+                    <div id="box55">
+                        <div id="box55a">
+                            <a href="https://www.facebook.com"> <img src="/chamber/FLogo.png" width=”100″ height=”132″> </a>
+                        </div>
+                      
+                        <div id="box55b">
+                            <a href="https://www.linkedin.com"> <img src="/chamber/LinkedIn-Blue-14@2x.png" width="100" height="132"> </a>
+                        </div>
+
+                        <div id="box55c">
+                            <a href="https://www.x.com"><img src="/chamber/logo-white.png" width="100" height="132" </a>
+                        </div>
+                    </div>
+
                 </div>
-                <div id="box7">
-                    Box 7
+                <div id="box3right" input type="text" style="text-align: right">
+                    <p>WDD231 Class Project</p>
+                    <p>Derek J. Steele</p>
+                    <p>© Phoenix Chamber of Commerce</p>
+                    <p></p>
+                    <p>Last updated:</p>
+                    <p id="date-time"></p>
+                    <script>
+                        const date = new Date(document.lastModified);
+                        document.getElementById("date-time").innerHTML = date;
+                    </script>
                 </div>
             </div>
-            <div id="box8">
-                Box 8
-            </div>
+            <!--close three boxes for footer-->
+        </div>
+        <!--Close actual footer-->
+
+            
         </div>
     </div>
 </body>
