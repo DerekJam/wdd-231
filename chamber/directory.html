@@ -230,19 +230,25 @@
 
                 <table id = "tb1" border = "1">
                     <tr>
-                        <th>businessname</th>
-                        <th>businesstagline</th>
-                        <th>poster</th>
+                        <th>business name 1</th>
+                        <th>business tagline 1</th>
+                        <th>email 1</th>
+                        <th>phone 1</th>
+                        <th>URL 1</th>
                     </tr>
                     <tr>
-                        <th>businessname1</th>
-                        <th>businesstagline2</th>
-                        <th>poster3</th>
+                        <th>business name 2</th>
+                        <th>business tagline 2</th>
+                        <th>email 2</th>
+                        <th>phone 2</th>
+                        <th>URL 2</th>
                     </tr>
                     <tr>
-                        <th>businessname4</th>
-                        <th>businesstagline5</th>
-                        <th>poster6</th>
+                        <th>business name 3</th>
+                        <th>business tagline 3</th>
+                        <th>email 3</th>
+                        <th>phone 3</th>
+                        <th>URL 3</th>
                     </tr>
                 </table>
                 <script>
@@ -250,14 +256,18 @@
                         .then(response => response.json())
                         .then(data => {
                             for (var i = 0; i<data.items.length; i++){
-                                let vmovieID = data.items[i].movieID;
-                                let vtitle = data.items[i].title;
-                                let vposter = data.items[i].poster;
+                                let vbizname = data.items[i].bizname;
+                                let vbiztag = data.items[i].biztag;
+                                let vemail = data.items[i].email;
+                                let vphone = data.items[i].phone;
+                                let vurl = data.items[1].url;
                                     document.querySelector("#tb1").innerHTML += `
                                         <tr>
-                                            <td>${vmovieID}</td>
-                                            <td>${vtitle}</td>
-                                            <td>${vposter}</td>
+                                            <td>${vbizname}</td>
+                                            <td>${vbiztag}</td>
+                                            <td>${vemail}</td>
+                                            <td>${vphone}</td>
+                                            <td>${vurl}</td>
                                         </tr>`;
                             }
                         })
