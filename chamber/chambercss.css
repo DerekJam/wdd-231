@@ -2,7 +2,23 @@
 
 
 
-
+.resume
+{   
+    margin-right: 2%;
+}
+.resume_class
+{
+    display: inline-block;
+    width: 27%;
+    height: 400px;
+    margin-left: 5%;
+    background: purple;
+   position: relative;
+}
+.resume_class ul
+{
+    position: absolute;
+}
 
 
 
