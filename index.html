@@ -66,107 +66,12 @@ tbody tr:last-of-type td {
 <table>
   <thead>
     <tr>
-      <th>Header one *leads the width* (case 1)</th>
-      <th>Header two</th>
+      <th><img src="me-image.png" alt="my image" width="230" height="auto"></th>
+      <th>Derek J. Steele</th>
       <th>Header three</th>
-    </tr>
-    <tr>
-        <th>Header TRY</th>
-        <th>Header TRY ME</th>
-        <th>Header TRY ME HERE</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>Column one</td>
-      <td>Column two *leads the width* (case 2)</td>
-      <td>Column three</td>
-    </tr>
-    <tr>
-      <td>Column one</td>
-      <td>Column two *leads the width* (case 2)</td>
-      <td>Column three</td>
-    </tr>
-    <tr>
-      <td>Column one</td>
-      <td>Column two *leads the width* (case 2)</td>
-      <td>Column three</td>
-    </tr>
-    <tr>
-      <td>Column one</td>
-      <td>Column two *leads the width* (case 2)</td>
-      <td>Column three</td>
-    </tr>
-    <tr>
-      <td>Column one</td>
-      <td>Column two *leads the width* (case 2)</td>
-      <td>Column three</td>
-    </tr>
-    <tr>
-      <td>Column one</td>
-      <td>Column two *leads the width* (case 2)</td>
-      <td>Column three</td>
-    </tr>
-    <tr>
-      <td>Column one</td>
-      <td>Column two *leads the width* (case 2)</td>
-      <td>Column three</td>
-    </tr>
-    <tr>
-      <td>Column one</td>
-      <td>Column two *leads the width* (case 2)</td>
-      <td>Column three</td>
-    </tr>
-    <tr>
-      <td>Column one</td>
-      <td>Column two *leads the width* (case 2)</td>
-      <td>Column three</td>
-    </tr>
-    <tr>
-      <td>Column one</td>
-      <td>Column two *leads the width* (case 2)</td>
-      <td>Column three</td>
-    </tr>
-    <tr>
-      <td>Column one</td>
-      <td>Column two *leads the width* (case 2)</td>
-      <td>Column three</td>
-    </tr>
-    <tr>
-      <td>Column one</td>
-      <td>Column two *leads the width* (case 2)</td>
-      <td>Column three</td>
-    </tr>
-    <tr>
-      <td>Column one</td>
-      <td>Column two *leads the width* (case 2)</td>
-      <td>Column three</td>
-    </tr>
-    <tr>
-      <td>Column one</td>
-      <td>Column two *leads the width* (case 2)</td>
-      <td>Column three</td>
-    </tr>
-    <tr>
-      <td>Column one</td>
-      <td>Column two *leads the width* (case 2)</td>
-      <td>Column three</td>
-    </tr>
-    <tr>
-      <td>Column one</td>
-      <td>Column two *leads the width* (case 2)</td>
-      <td>Column three</td>
-    </tr>
-    <tr>
-      <td>Column one</td>
-      <td>Column two *leads the width* (case 2)</td>
-      <td>Column three</td>
-    </tr>
-    <tr>
-      <td>Column one</td>
-      <td>Column two *leads the width* (case 2)</td>
-      <td>Column three</td>
-    </tr>
     <tr>
       <td>Column one</td>
       <td>Column two *leads the width* (case 2)</td>
@@ -341,8 +246,28 @@ tbody tr:last-of-type td {
   <tfoot>
     <tr>
       <td>Footer one</td>
-      <td>Footer two</td>
-      <td>Footer three *leads the width* (case 3)</td>
+      <td>
+        <img src="chamber/FLogo.png" alt="facebook" width="50" height="auto">
+        <img src="xwhite.png" alt="twitterx" width="50" height="auto">
+        <img src="LinkedIn.png" alt="linkedin" width="50" height="auto">
+      </td>
+      <td>
+        <p>© Derek J. Steele, USA</p>
+                    <p>
+                      <!--LAST MODIFIED-->
+                      <button onclick="geeks()">
+                      Last Modified
+                      </button>
+                      <p id="curryear"></p>
+                      <script>
+                     function geeks() {
+                       let x = document.lastModified;
+                      document.getElementById("curryear").innerHTML = x;
+                      }
+                       </script>
+                      <!--Close LAST MODIFIED-->
+                     </p>
+      </td>
     </tr>
   </tfoot>
 </table>
