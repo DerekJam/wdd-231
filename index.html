@@ -52,11 +52,11 @@ td {
 /*give some space between thead and tfoot*/
 
 tbody tr:first-of-type td {
-  padding-top:  10px;
+  padding-top:  0px;
 }
 
 tbody tr:last-of-type td {
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 </style>
 </head>
@@ -66,16 +66,28 @@ tbody tr:last-of-type td {
 <table>
   <thead>
     <tr>
-      <th><img src="me-image.png" alt="my image" width="230" height="auto"></th>
-      <th>Derek J. Steele</th>
+      <th><img src="me-image.png" alt="my image" width="130" height="auto"></th>
+      <th><h1>Derek J. Steele</h1></th>
       <th>Header three</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Column one</td>
-      <td>Column two *leads the width* (case 2)</td>
-      <td>Column three</td>
+      <td>
+        <div>
+        <h1 style="background-color:lightskyblue;">Course Work</h1>
+        </div>
+      </td>
+      <td>
+        <div>
+          <h1 style="background-color:lightskyblue;">Courses Remaining</h1>
+          </div>
+      </td>
+      <td>
+        <div>
+          <h1 style="background-color:lightskyblue;">Phoenix, AZ</h1>
+          </div>
+      </td>
     </tr>
     <tr>
       <td>Column one</td>
@@ -240,33 +252,39 @@ tbody tr:last-of-type td {
     <tr>
       <td>Column one</td>
       <td>Column two *leads the width* (case 2)</td>
-      <td>Column three</td>
+      <td>
+        
+      </td>
     </tr>
   </tbody>
+
+
+
   <tfoot>
     <tr>
-      <td>Footer one</td>
       <td>
-        <img src="chamber/FLogo.png" alt="facebook" width="50" height="auto">
-        <img src="xwhite.png" alt="twitterx" width="40" height="auto">
-        <img src="LinkedIn.png" alt="linkedin" width="75" height="auto">
+        <p>
+          <!--LAST MODIFIED-->
+          <button onclick="geeks()">
+            Last Modified
+            </button>
+            <p id="curryear"></p>
+            <script>
+           function geeks() {
+             let x = document.lastModified;
+            document.getElementById("curryear").innerHTML = x;
+            }
+             </script>
+            <!--Close LAST MODIFIED-->
+        </p>
+      </td>
+      <td>
+        <a href="https://www.Facebook.com/"><img src="chamber/FLogo.png" alt="facebook" width="50" height="auto" style="margin: 0px 30px 0px 0px;" ></a>
+        <a href="https://www.X.com/"><img src="xwhite.png" alt="twitterx" width="40" height="auto" style="margin: 0px 30px 0px 0px;"></a>
+        <a href="https://www.LinkedIn.com/"><img src="LinkedIn.png" alt="linkedin" width="50" height="auto"></a>
       </td>
       <td>
         <p>© Derek J. Steele, USA</p>
-                    <p>
-                      <!--LAST MODIFIED-->
-                      <button onclick="geeks()">
-                      Last Modified
-                      </button>
-                      <p id="curryear"></p>
-                      <script>
-                     function geeks() {
-                       let x = document.lastModified;
-                      document.getElementById("curryear").innerHTML = x;
-                      }
-                       </script>
-                      <!--Close LAST MODIFIED-->
-                     </p>
       </td>
     </tr>
   </tfoot>
