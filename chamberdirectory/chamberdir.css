@@ -9,9 +9,21 @@ body { margin: 0; padding: 0; }
     text-align: center;
 }
 
+
 #content {
     margin-top: 60px;
 }
+
+#top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background: darkblue;
+    text-align: center;
+}
+
+
 
 #footer {
     position: fixed;
@@ -23,57 +35,53 @@ body { margin: 0; padding: 0; }
     color: white;
 }
 
+
+
+
 .outer1 {
     border: 0px solid black;
     margin: 1rem;
-    padding: 1rem 1rem;
+    padding: .5rem .5rem;
     text-align: center;
     color: white;
-  }
-
-  .innerleft1 {
-    display: inline-block;
-    border: 0px solid red;
-    padding: 1rem 1rem;
-    vertical-align: middle;
   }
 
   .innerright1 {
     display: inline-block;
     border: 0px solid red;
-    padding: 1rem 1rem;
+    padding: .5rem .5rem;
     vertical-align: middle;
   }
 
 
 
-.outer2 {
-    border: 1px solid black;
+.outer1a {
+    border: 0px solid black;
     margin: 1rem;
-    padding: 2rem 2rem;
+    padding: .5rem .5rem;
     text-align: center;
+    color: white;
   }
 
-  .innerleft2 {
+  .innerright1a {
     display: inline-block;
-    border: 1px solid red;
-    padding: 1rem 1rem;
+    border: 0px solid red;
+    padding: .5rem .5rem;
     vertical-align: middle;
   }
 
-  .innerright2 {
-    display: inline-block;
-    border: 1px solid red;
-    padding: 1rem 1rem;
-    vertical-align: middle;
-  }
+
+
+
+
+
 
 
 
   .outer3 {
-    border: 1px solid black;
+    border: 0px solid black;
     margin: 1rem;
-    padding: 2rem 2rem;
+    padding: .5rem .5rem;
     text-align: center;
   }
 
@@ -91,8 +99,14 @@ body { margin: 0; padding: 0; }
     vertical-align: middle;
   }
 
+
+
+
+
+
+  
   .outer4 {
-    border: 1px solid black;
+    border: 0px solid black;
     margin: 1rem;
     padding: 2rem 2rem;
     text-align: center;
@@ -100,35 +114,14 @@ body { margin: 0; padding: 0; }
 
   .innerleft4 {
     display: inline-block;
-    border: 1px solid red;
+    border: 0px solid red;
     padding: 1rem 1rem;
     vertical-align: middle;
   }
 
   .innerright4 {
     display: inline-block;
-    border: 1px solid red;
-    padding: 1rem 1rem;
-    vertical-align: middle;
-  }
-
-  .outer5 {
-    border: 1px solid black;
-    margin: 1rem;
-    padding: 2rem 2rem;
-    text-align: center;
-  }
-
-  .innerleft5 {
-    display: inline-block;
-    border: 1px solid red;
-    padding: 1rem 1rem;
-    vertical-align: middle;
-  }
-
-  .innerright5 {
-    display: inline-block;
-    border: 1px solid red;
+    border: 0px solid red;
     padding: 1rem 1rem;
     vertical-align: middle;
   }
