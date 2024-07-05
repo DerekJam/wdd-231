@@ -28,13 +28,7 @@ body { margin: 0; padding: 0; }
     margin: 1rem;
     padding: 1rem 1rem;
     text-align: center;
-  }
-
-  .innerleft1 {
-    display: inline-block;
-    border: 0px solid red;
-    padding: 1rem 1rem;
-    vertical-align: middle;
+    color: white;
   }
 
   .innerright1 {
