@@ -18,215 +18,328 @@
 }
 </style>
 
+<style>  
+body {
+  margin: 0
+}
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
- 
-        body {
-            margin: 2%;
-            justify-content: center;
-            overflow: visible;
-        }
- 
-        .box-wrapper {
-            height: 95vh;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-        }
- 
-        #box1 {
-            padding: 10px;
-            border: solid 1px green
-        }
- 
-        #box2 {
-            padding: 8px;
-            border: solid 1px blue
-        }
- 
-        #box3 {
-            padding: 10px;
-            flex-grow: 1;
-            display: flex;
-            flex-direction: row;
-            border: solid 1px green
-        }
- 
-        #box4 {
-            flex-grow: 2;
-            border: solid 1px orange
-        }
- 
-        .middle-column {
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
-        }
- 
-        .middle-column div {
-            flex-grow: 1;
-            margin: 0 8px;
-            border: solid 1px red;
-        }
- 
-        .middle-column div+div {
-            margin-top: 8px
-        }
- 
-        #box8 {
-            flex-grow: 1;
-            border: solid 1px black
-        }
+table {
+  width: 100%
+}
 
-    </style>
+thead th,
+tfoot tr {
+  position: sticky;
+  background: red
+}
 
-<style>
-/* Basic styling for footer */
-    footer {
-        background-color: #333;
-        color: #fff;
-        padding: 20px 0;
-        text-align: center;
-        width: 100%;
-        position: fixed;
-        bottom: 0;
-    }
-    /* Styling for columns */
-    .footer-columns {
-        display: flex;
-        justify-content: space-around;
-        align-items: flex-start;
-        flex-wrap: wrap;
-    }
-    /* Individual column styling */
-    .footer-column {
-        flex: 1;
-        padding: 0 20px;
-    }
-    /* Responsive adjustments */
-    @media (max-width: 768px) {
-        .footer-column {
-            flex-basis: 100%;
-            margin-bottom: 20px;
-        }
-    }
-</style>
+thead th {
+  top: 0
+}
 
-<style>
-img {
-  float: left;
+tfoot tr {
+  bottom: 0
+}
+
+th,
+td {
+  font-size: 12px;
+  text-align: center
+}
+
+
+/*give some space between thead and tfoot*/
+
+tbody tr:first-of-type td {
+  padding-top:  10px;
+}
+
+tbody tr:last-of-type td {
+  padding-bottom: 10px;
 }
 </style>
-
-<style>
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: blue;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover {
-    background-color: blue;
-  }
-  
-  .active {
-    background-color: red;
-  }
-  </style>
-
 </head>
- 
-<body>
 
 
-
-
-
-    <div class="box-wrapper">
-        <div id="box1">
-          <img src="me-image.png" alt="Derek" width="100" height="auto">
-        </div>
- 
-        <div id="box2">
-          <ul>
-            <li><a href="#home" class="active">Home</a></li>
-            <li><a href="/WDD231/chamber/directory.html">Chamber of Commerce</a></li>
-            <li><a href="#github">GitHub Profile</a></li>
-            <li><a href="https://www.linkedin.com">LinkedIn</a></li>
-          </ul>        
-        </div>
- 
-        <div id="box3">
-            <div id="box4">
-                Box 4
-            </div>
-            <div class="middle-column">
-                <div id="box5">
-                    Box 5
-                </div>
-                <div id="box6">
-                    Box 6
-                </div>
-                <div id="box7">
-                    Box 7
-                </div>
-            </div>
-            <div id="box8">
-                Box 8
-            </div>
-        </div>
-    </div>
-
-<footer>
-    <div class="footer-columns">
-        <div class="footer-column">
-            <h3>Column 1</h3>
-            <p>Content for column 1.</p>
-        </div>
-        <div class="footer-column">
-            <h3>Column 2</h3>
-            <p>Content for column 2.</p>
-        </div>
-        <div class="footer-column">
-            <p>© Derek J. Steele, USA</p>
-                    <p>
-                      <!--LAST MODIFIED-->
-                      <button onclick="geeks()">
-                      Last Modified
-                      </button>
-                      <p id="curryear"></p>
-                      <script>
-                     function geeks() {
-                       let x = document.lastModified;
-                      document.getElementById("curryear").innerHTML = x;
-                      }
-                       </script>
-                      <!--Close LAST MODIFIED-->
-                     </p>
-        </div>
-    </div>
-</footer>
-
+<body>  
+<table>
+  <thead>
+    <tr>
+      <th>Header one *leads the width* (case 1)</th>
+      <th>Header two</th>
+      <th>Header three</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Column one</td>
+      <td>Column two *leads the width* (case 2)</td>
+      <td>Column three</td>
+    </tr>
+    <tr>
+      <td>Column one</td>
+      <td>Column two *leads the width* (case 2)</td>
+      <td>Column three</td>
+    </tr>
+    <tr>
+      <td>Column one</td>
+      <td>Column two *leads the width* (case 2)</td>
+      <td>Column three</td>
+    </tr>
+    <tr>
+      <td>Column one</td>
+      <td>Column two *leads the width* (case 2)</td>
+      <td>Column three</td>
+    </tr>
+    <tr>
+      <td>Column one</td>
+      <td>Column two *leads the width* (case 2)</td>
+      <td>Column three</td>
+    </tr>
+    <tr>
+      <td>Column one</td>
+      <td>Column two *leads the width* (case 2)</td>
+      <td>Column three</td>
+    </tr>
+    <tr>
+      <td>Column one</td>
+      <td>Column two *leads the width* (case 2)</td>
+      <td>Column three</td>
+    </tr>
+    <tr>
+      <td>Column one</td>
+      <td>Column two *leads the width* (case 2)</td>
+      <td>Column three</td>
+    </tr>
+    <tr>
+      <td>Column one</td>
+      <td>Column two *leads the width* (case 2)</td>
+      <td>Column three</td>
+    </tr>
+    <tr>
+      <td>Column one</td>
+      <td>Column two *leads the width* (case 2)</td>
+      <td>Column three</td>
+    </tr>
+    <tr>
+      <td>Column one</td>
+      <td>Column two *leads the width* (case 2)</td>
+      <td>Column three</td>
+    </tr>
+    <tr>
+      <td>Column one</td>
+      <td>Column two *leads the width* (case 2)</td>
+      <td>Column three</td>
+    </tr>
+    <tr>
+      <td>Column one</td>
+      <td>Column two *leads the width* (case 2)</td>
+      <td>Column three</td>
+    </tr>
+    <tr>
+      <td>Column one</td>
+      <td>Column two *leads the width* (case 2)</td>
+      <td>Column three</td>
+    </tr>
+    <tr>
+      <td>Column one</td>
+      <td>Column two *leads the width* (case 2)</td>
+      <td>Column three</td>
+    </tr>
+    <tr>
+      <td>Column one</td>
+      <td>Column two *leads the width* (case 2)</td>
+      <td>Column three</td>
+    </tr>
+    <tr>
+      <td>Column one</td>
+      <td>Column two *leads the width* (case 2)</td>
+      <td>Column three</td>
+    </tr>
+    <tr>
+      <td>Column one</td>
+      <td>Column two *leads the width* (case 2)</td>
+      <td>Column three</td>
+    </tr>
+    <tr>
+      <td>Column one</td>
+      <td>Column two *leads the width* (case 2)</td>
+      <td>Column three</td>
+    </tr>
+    <tr>
+      <td>Column one</td>
+      <td>Column two *leads the width* (case 2)</td>
+      <td>Column three</td>
+    </tr>
+    <tr>
+      <td>Column one</td>
+      <td>Column two *leads the width* (case 2)</td>
+      <td>Column three</td>
+    </tr>
+    <tr>
+      <td>Column one</td>
+      <td>Column two *leads the width* (case 2)</td>
+      <td>Column three</td>
+    </tr>
+    <tr>
+      <td>Column one</td>
+      <td>Column two *leads the width* (case 2)</td>
+      <td>Column three</td>
+    </tr>
+    <tr>
+      <td>Column one</td>
+      <td>Column two *leads the width* (case 2)</td>
+      <td>Column three</td>
+    </tr>
+    <tr>
+      <td>Column one</td>
+      <td>Column two *leads the width* (case 2)</td>
+      <td>Column three</td>
+    </tr>
+    <tr>
+      <td>Column one</td>
+      <td>Column two *leads the width* (case 2)</td>
+      <td>Column three</td>
+    </tr>
+    <tr>
+      <td>Column one</td>
+      <td>Column two *leads the width* (case 2)</td>
+      <td>Column three</td>
+    </tr>
+    <tr>
+      <td>Column one</td>
+      <td>Column two *leads the width* (case 2)</td>
+      <td>Column three</td>
+    </tr>
+    <tr>
+      <td>Column one</td>
+      <td>Column two *leads the width* (case 2)</td>
+      <td>Column three</td>
+    </tr>
+    <tr>
+      <td>Column one</td>
+      <td>Column two *leads the width* (case 2)</td>
+      <td>Column three</td>
+    </tr>
+    <tr>
+      <td>Column one</td>
+      <td>Column two *leads the width* (case 2)</td>
+      <td>Column three</td>
+    </tr>
+    <tr>
+      <td>Column one</td>
+      <td>Column two *leads the width* (case 2)</td>
+      <td>Column three</td>
+    </tr>
+    <tr>
+      <td>Column one</td>
+      <td>Column two *leads the width* (case 2)</td>
+      <td>Column three</td>
+    </tr>
+    <tr>
+      <td>Column one</td>
+      <td>Column two *leads the width* (case 2)</td>
+      <td>Column three</td>
+    </tr>
+    <tr>
+      <td>Column one</td>
+      <td>Column two *leads the width* (case 2)</td>
+      <td>Column three</td>
+    </tr>
+    <tr>
+      <td>Column one</td>
+      <td>Column two *leads the width* (case 2)</td>
+      <td>Column three</td>
+    </tr>
+    <tr>
+      <td>Column one</td>
+      <td>Column two *leads the width* (case 2)</td>
+      <td>Column three</td>
+    </tr>
+    <tr>
+      <td>Column one</td>
+      <td>Column two *leads the width* (case 2)</td>
+      <td>Column three</td>
+    </tr>
+    <tr>
+      <td>Column one</td>
+      <td>Column two *leads the width* (case 2)</td>
+      <td>Column three</td>
+    </tr>
+    <tr>
+      <td>Column one</td>
+      <td>Column two *leads the width* (case 2)</td>
+      <td>Column three</td>
+    </tr>
+    <tr>
+      <td>Column one</td>
+      <td>Column two *leads the width* (case 2)</td>
+      <td>Column three</td>
+    </tr>
+    <tr>
+      <td>Column one</td>
+      <td>Column two *leads the width* (case 2)</td>
+      <td>Column three</td>
+    </tr>
+    <tr>
+      <td>Column one</td>
+      <td>Column two *leads the width* (case 2)</td>
+      <td>Column three</td>
+    </tr>
+    <tr>
+      <td>Column one</td>
+      <td>Column two *leads the width* (case 2)</td>
+      <td>Column three</td>
+    </tr>
+    <tr>
+      <td>Column one</td>
+      <td>Column two *leads the width* (case 2)</td>
+      <td>Column three</td>
+    </tr>
+    <tr>
+      <td>Column one</td>
+      <td>Column two *leads the width* (case 2)</td>
+      <td>Column three</td>
+    </tr>
+    <tr>
+      <td>Column one</td>
+      <td>Column two *leads the width* (case 2)</td>
+      <td>Column three</td>
+    </tr>
+    <tr>
+      <td>Column one</td>
+      <td>Column two *leads the width* (case 2)</td>
+      <td>Column three</td>
+    </tr>
+    <tr>
+      <td>Column one</td>
+      <td>Column two *leads the width* (case 2)</td>
+      <td>Column three</td>
+    </tr>
+    <tr>
+      <td>Column one</td>
+      <td>Column two *leads the width* (case 2)</td>
+      <td>Column three</td>
+    </tr>
+    <tr>
+      <td>Column one</td>
+      <td>Column two *leads the width* (case 2)</td>
+      <td>Column three</td>
+    </tr>
+    <tr>
+      <td>Column one</td>
+      <td>Column two *leads the width* (case 2)</td>
+      <td>Column three</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td>Footer one</td>
+      <td>Footer two</td>
+      <td>Footer three *leads the width* (case 3)</td>
+    </tr>
+  </tfoot>
+</table>
 </body>
  
 </html>
