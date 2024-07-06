@@ -1,5 +1,6 @@
 {
-    "name": "John Doe",
-    "age": 30,
-    "city": "Anytown"
+    "name": "Business 1",
+    "address": "City, State, Zip",
+    "phone": "555-555-5555",
+    "website": "www.website.com"
 }

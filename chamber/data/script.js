@@ -8,16 +8,20 @@ document.addEventListener("DOMContentLoaded", function () {
             const nameElement = document.createElement("p");
             nameElement.textContent = "Name: " + data.name;
 
-            const ageElement = document.createElement("p");
-            ageElement.textContent = "Age: " + data.age;
+            const addressElement = document.createElement("p");
+            addressElement.textContent = "Address: " + data.address;
 
-            const cityElement = document.createElement("p");
-            cityElement.textContent = "City: " + data.city;
+            const phoneElement = document.createElement("p");
+            phoneElement.textContent = "Phone: " + data.phone;
+
+            const websiteElement = document.createElement("p");
+            websiteElement.textContent = "Website: " + data.website;
 
             // Append the elements to the "dataDisplay" div
             dataDisplay.appendChild(nameElement);
-            dataDisplay.appendChild(ageElement);
-            dataDisplay.appendChild(cityElement);
+            dataDisplay.appendChild(addressElement);
+            dataDisplay.appendChild(phoneElement);
+            dataDisplay.appendChild(websiteElement);
         })
         .catch(error => console.error("Error fetching JSON data:", error));
 });
