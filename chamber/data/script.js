@@ -17,11 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const websiteElement = document.createElement("p");
             websiteElement.textContent = "Website: " + data.website;
 
-            // Append the elements to the "dataDisplay" div
-            dataDisplay.appendChild(nameElement);
-            dataDisplay.appendChild(addressElement);
-            dataDisplay.appendChild(phoneElement);
-            dataDisplay.appendChild(websiteElement);
+            
         })
         .catch(error => console.error("Error fetching JSON data:", error));
 });
