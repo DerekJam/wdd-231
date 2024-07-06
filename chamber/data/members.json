@@ -1,18 +1,5 @@
 {
-    "items": [
-        {
-            "bizname": "65086",
-            "biztag": "The Woman in Black",
-            "email": "/kArMj2qsOnpxBCpSa3RQ0XemUiX.jpg",
-            "phone": "something",
-            "url": "something2"
-        },
-        {
-            "bizname": "76726",
-            "biztag": "Chronicle",
-            "email": "/853mMoSc5d6CH8uAV9Yq0iHfjor.jpg",
-            "phone": "something",
-            "url": "something2"
-        }
-    ]
+    "name": "John Doe",
+    "age": 30,
+    "city": "Anytown"
 }
