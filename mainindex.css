@@ -7,7 +7,7 @@ body { margin: 0; padding: 0; }
     height: 50px;
     background: darkblue;
     text-align: center;
-    background-size: cover;
+    header-size: cover;
 }
 
 #content {
