@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    fetch('data.json')
+    fetch('chamber/data.json')
         .then(response => response.json())
         .then(data => {
             const dataDisplay = document.getElementById("dataDisplay");
