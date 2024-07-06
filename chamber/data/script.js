@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
-    fetch('https://derekjam.github.io/WDD231/chamber/data/members.json')
+    fetch('data/members.json')
         .then(response => response.json())
         .then(data => {
-            const dataDisplay = document.getElementById("col-container2");
+            const dataDisplay = document.getElementById("dataDisplay");
 
             // Create HTML elements to display the JSON data
             const nameElement = document.createElement("p");
