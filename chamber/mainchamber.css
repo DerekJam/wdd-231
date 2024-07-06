@@ -4,21 +4,21 @@ body { margin: 0; padding: 0; }
     position: fixed;
     top: 0;
     width: 100%;
-    height: 50px;
+    height: 3.125em;
     background: darkblue;
     text-align: center;
 }
 
 
 #content {
-    margin-top: 60px;
+    margin-top: 3.75em;
 }
 
 #top {
     position: fixed;
     top: 0;
     width: 100%;
-    height: 50px;
+    height: 3.125em;
     background: darkblue;
     text-align: center;
 }
@@ -29,11 +29,11 @@ body { margin: 0; padding: 0; }
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 50px;
+    height: 3.125em;
     background: darkblue; 
     text-align: center;
     color: white;
-    padding: 5px 10px 30px 5px;
+    padding: 0.313em 0.625em 1.875em 0.313em;
 }
 
 
@@ -94,14 +94,14 @@ body { margin: 0; padding: 0; }
 
   .innerleft3 {
     display: inline-block;
-    border: 1px solid red;
+    border: 0.063em solid red;
     padding: 1rem 1rem;
     vertical-align: middle;
   }
 
   .innerright3 {
     display: inline-block;
-    border: 1px solid red;
+    border: 0.063em solid red;
     padding: 1rem 1rem;
     vertical-align: middle;
   }
