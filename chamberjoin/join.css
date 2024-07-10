@@ -127,3 +127,9 @@ body { margin: 0; padding: 0; }
     padding: 1rem 1rem;
     vertical-align: middle;
   }
+
+
+  label {
+    display: block;
+    margin-top: 1rem;
+  }
