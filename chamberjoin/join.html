@@ -261,8 +261,10 @@
                     <p>
                                           <h2>Timestamp</h2>
                                                     <p>
-                                                      current date and time that the form 
-                                                      was loaded by the user
+                                                            <script>
+                                                              const date = new Date(document.lastModified);
+                                                              document.getElementById("demo").innerHTML = date;
+                                                              </script> 
                                                     </p>
                     </p>
                     <br></br>                    
