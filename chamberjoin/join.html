@@ -261,7 +261,13 @@
                     <p>
                                           <h2>Timestamp</h2>
                                                     <p>
-                                                            Timestamp goes here
+                                                      <button onclick="myFunction(event)">Click me!</button>
+                                                      <script>
+                                                        function myFunction(event) {
+                                                          var n = event.timeStamp;
+                                                          document.getElementById("demo").innerHTML = n;
+                                                        }
+                                                        </script>
                                                     </p>
                     </p>
                     <br></br>                    
