@@ -22,6 +22,7 @@ body { margin: 0; padding: 0; }
     background: #654236; 
     text-align: center;
     color: white;
+    size: 12px;
     font-family: 'Noto Sans';
 }
 
