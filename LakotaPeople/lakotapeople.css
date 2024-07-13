@@ -32,7 +32,7 @@ body { margin: 0; padding: 0; }
 
   .innerleft1 {
     display: inline-block;
-    border: 0px solid red;
+    border: 0px solid #E24E1B;
     padding: 1rem 1rem;
     vertical-align: middle;
   }
