@@ -66,14 +66,14 @@ body { margin: 0; padding: 0; }
 
   .innerleft3 {
     display: inline-block;
-    border: 1px solid red;
+    border: 0px solid red;
     padding: 1rem 1rem;
     vertical-align: middle;
   }
 
   .innerright3 {
     display: inline-block;
-    border: 1px solid red;
+    border: 0px solid red;
     padding: 1rem 1rem;
     vertical-align: middle;
   }
