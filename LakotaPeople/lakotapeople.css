@@ -58,7 +58,7 @@ body { margin: 0; padding: 0; }
 
 
   .outer3 {
-    border: 1px solid black;
+    border: 0px solid black;
     margin: 1rem;
     padding: 2rem 2rem;
     text-align: center;
