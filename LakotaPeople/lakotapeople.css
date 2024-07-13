@@ -5,7 +5,8 @@ body { margin: 0; padding: 0; }
     top: 0;
     width: 100%;
     height: 50px;
-    background: #654236;
+    background: #654236
+    color: #DB995A;
     text-align: center;
 }
 
@@ -18,9 +19,9 @@ body { margin: 0; padding: 0; }
     bottom: 0;
     width: 100%;
     height: 50px;
-    background: darkblue; 
+    background: #654236; 
     text-align: center;
-    color: white;
+    color: #DB995A;
 }
 
 .outer1 {
