@@ -7,6 +7,7 @@ body { margin: 0; padding: 0; }
   height: 50px;
   background: #654236;
   text-align: center;
+  font-family: 'Montserrat';
 }
 
 #content {
@@ -21,6 +22,7 @@ body { margin: 0; padding: 0; }
     background: #654236; 
     text-align: center;
     color: white;
+    font-family: 'Montserrat';
 }
 
 .outer1 {
@@ -28,6 +30,7 @@ body { margin: 0; padding: 0; }
     margin: 1rem;
     padding: 1rem 1rem;
     text-align: center;
+    font-family: 'Noto Sans';
   }
 
   .innerleft1 {
