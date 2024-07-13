@@ -161,7 +161,7 @@
                     </p>
                     <p>
                       <form action="/chamberjoin/thankyou.html" method="get" target="_blank">
-                        <label for="firstname"><h2>First Name:</h2></label>
+                        <label for="firstname">First Name:</label>
                         <input type="text" id="firstname" name="fname" type="text" autocomplete="given-name" placeholder="first name" /><br><br>
                         
                         <label for="lastname">Last name:</label>
@@ -170,14 +170,78 @@
                         <label for="email">Email:</label>
                         <input name="email" id="email" type="email" autocomplete="on" placeholder="example@example.com" />
                                
-                        <p>
-                          <h2>Organizational Title</h2>
+                        <label for="organization">Organizational Title: autocomplete value of "organization-title", and pattern to only accept 
+                            alpha characters, hyphens, and spaces with a minimum of seven characters</label>
+                        <input name="organization" id="organization" type="text" />
+                            
+                        <label for="business">Business Name: correct autocomplete value of "organization"</label>
+                        <input name="business" id="business" type="text" />
+
+                        <label for="mobilephone">Mobile Phone Number: enter your phone number with area code and then click "check."</label>
+                        <input name="mobilephone" id=""
+                    
+                    </p>
+                       
+
+              <p>
+                <h2>Mobile Phone Number</h2>
                           <p>
-                            autocomplete value of "organization-title", and pattern to only accept 
-                            alpha characters, hyphens, and spaces with a minimum of seven characters
+                            Enter your phone number (with area code) and then click "Check".
+                            <br />
                           </p>
-                        </p>
-                        <br><br>
+                          <form id="form">
+                            <input id="phone" placeholder="###-###-####"><br></br>
+                            <button type="submit2">Check</button>
+                          </form>
+                          <p id="output"></p>   
+              </p>
+
+              <p>
+                <h2>Email Address</h2>
+                <p>
+                </p>
+                <p>
+                              <form>
+                                <label for="EMAIL ID">
+                                      Please enter your email address below:
+                                  </label>
+                                  <br>
+                                <input type="text" name="Email id"
+                                      id="Email id" autocomplete="on" placeholder="example@example.com">
+                            </form>
+                </p>
+    </p>
+
+    <p>
+      <h2>Membership Level</h2>
+      <p>
+      </p>
+      <p>
+                <form>
+                  <label for="level">Select below:</label>
+                  <select name="level" id="level">
+                      <option value="Gold">Gold</option>
+                      <option value="Silver">Silver</option>
+                      <option value="Bronze">Bronze</option>
+                      <option value="NP">NP Membership (no fee)</option>
+                  </select>
+              </form>
+      </p>
+</p>
+
+
+
+<p>
+  <h2>Description</h2>
+  <p>
+  </p>
+    <form>
+      <label for="Description">Please describe your business in the text box below:</label>
+      <textarea rows="5" cols="50" name="Description"
+                id="Description">
+        </textarea>
+    </form>
+</p>
 
 
                         <input type="submit" value="Submit">
@@ -187,70 +251,15 @@
                     <br></br>
                     
                     <br></br>
-                    <p>
-                                <h2>Business Name</h2>
-                                          <p>
-                                            correct autocomplete value of "organization"
-                                          </p>
-                    </p>
+                   
                     <br></br>
-                    <p>
-                      <h2>Mobile Phone Number</h2>
-                                <p>
-                                  Enter your phone number (with area code) and then click "Check".
-                                  <br />
-                                </p>
-                                <form id="form">
-                                  <input id="phone" placeholder="###-###-####"><br></br>
-                                  <button type="submit2">Check</button>
-                                </form>
-                                <p id="output"></p>   
-                    </p>
+                    
                     <br></br>
-                    <p>
-                                <h2>Email Address</h2>
-                                <p>
-                                </p>
-                                <p>
-                                              <form>
-                                                <label for="EMAIL ID">
-                                                      Please enter your email address below:
-                                                  </label>
-                                                  <br>
-                                                <input type="text" name="Email id"
-                                                      id="Email id" autocomplete="on" placeholder="example@example.com">
-                                            </form>
-                                </p>
-                    </p>
+                    
                     <br></br>
-                    <p>
-                                          <h2>Membership Level</h2>
-                                          <p>
-                                          </p>
-                                          <p>
-                                                    <form>
-                                                      <label for="level">Select below:</label>
-                                                      <select name="level" id="level">
-                                                          <option value="Gold">Gold</option>
-                                                          <option value="Silver">Silver</option>
-                                                          <option value="Bronze">Bronze</option>
-                                                          <option value="NP">NP Membership (no fee)</option>
-                                                      </select>
-                                                  </form>
-                                          </p>
-                    </p>
+                    
                     <br></br>
-                    <p>
-                                          <h2>Description</h2>
-                                          <p>
-                                          </p>
-                                            <form>
-                                              <label for="Description">Please describe your business in the text box below:</label>
-                                              <textarea rows="5" cols="50" name="Description"
-                                                        id="Description">
-                                                </textarea>
-                                            </form>
-                    </p>
+                    
                     <br></br>
                     <p>
                                           <h2>Membership Benefits</h2>
