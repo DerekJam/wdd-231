@@ -54,19 +54,6 @@ body { margin: 0; padding: 0; }
     font-family: 'Noto Sans';
   }
 
-  .innerleft2 {
-    display: inline-block;
-    border: 1px solid red;
-    padding: 1rem 1rem;
-    vertical-align: middle;
-  }
-
-  .innerright2 {
-    display: inline-block;
-    border: 1px solid red;
-    padding: 1rem 1rem;
-    vertical-align: middle;
-  }
 
 
 
@@ -91,44 +78,4 @@ body { margin: 0; padding: 0; }
     vertical-align: middle;
   }
 
-  .outer4 {
-    border: 1px solid black;
-    margin: 1rem;
-    padding: 2rem 2rem;
-    text-align: center;
-  }
-
-  .innerleft4 {
-    display: inline-block;
-    border: 1px solid red;
-    padding: 1rem 1rem;
-    vertical-align: middle;
-  }
-
-  .innerright4 {
-    display: inline-block;
-    border: 1px solid red;
-    padding: 1rem 1rem;
-    vertical-align: middle;
-  }
-
-  .outer5 {
-    border: 1px solid black;
-    margin: 1rem;
-    padding: 2rem 2rem;
-    text-align: center;
-  }
-
-  .innerleft5 {
-    display: inline-block;
-    border: 1px solid red;
-    padding: 1rem 1rem;
-    vertical-align: middle;
-  }
-
-  .innerright5 {
-    display: inline-block;
-    border: 1px solid red;
-    padding: 1rem 1rem;
-    vertical-align: middle;
-  }
+  
