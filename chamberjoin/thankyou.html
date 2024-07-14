@@ -1,15 +1,27 @@
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <title>Forms Handler</title>
+    <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.css">
+</head>
 <body>
+    <div style="padding:20px;font-size:16px;">
 
-Welcome <?php echo $_GET["name"]; ?><br>
-Your email address is: <?php echo $_GET["email"]; ?><br>
-Your organization title is: <?php echo $_GET["organization"]; ?><br>
-Your business name is: <?php echo $_GET["business"]; ?><br>
-Your mobile phone number is: <?php echo $_GET["mobilephone"]; ?><br>
-Your selected membership level is: <?php echo $_GET["level"]; ?><br>
-Your business description is: <?php echo $_GET["Description"]; ?><br>
-Your membership benefits are: <?php echo $_GET["benefits"]; ?><br>
+        <div><button class="btn btn-sm btn-default" onclick="window.frameElement ? window.parent.location.reload() : history.back()">&lt; Back to page</button></div>
+        <br>
+        <div>The form handler received this data:</div>
+        <div style="padding-left: 10px; white-space: pre-line;" id="result"><br></div>
+    </div>
 
-</body>
-</html>
+
+
+<script>
+    const params = new URLSearchParams(window.location.search);
+   
+    var result = '<br />';
+    for (const [key, value] of params) {
+        result += (key + " = " + value + "<br />");
+    }
+
+    document.getElementById("result").innerHTML = result; 
+
+</script></body></html>
 
