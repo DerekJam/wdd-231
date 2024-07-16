@@ -167,10 +167,10 @@
                     <p>
                       <form action="/WDD231/chamber/thankyou.html" method="get">
                         
-                          <label>First Name:<br><input name="First Name" autocomplete="given-name" placeholder="First Name"></label>
+                          <label>First Name:<br><input name="First Name" autocomplete="given-name" placeholder="First Name" minlength="2"></label>
                           <br><br>
 
-                          <label>Last Name:<br><input name="Last Name" autocomplete="given-name" placeholder="Last Name"></label>
+                          <label>Last Name:<br><input name="Last Name" autocomplete="given-name" placeholder="Last Name" minlength="2"></label>
                           <br><br>
 
                           <label>Email:<br><input name="Email" autocomplete="on" placeholder="example@example.com"></label>
@@ -179,12 +179,16 @@
                           <label>Organizational Title:<br><input name="Organization" type="text" autocomplete="on" placeholder="Organizational Title" required pattern="[a-zA-Z0-9]+"></label>
                           <br><br>
                    
-                          <label>Business Name:<br><input name="Business" type="text" autocomplete="business" placeholder="Business"></label>
+                          <label>Business Name:<br><input name="Business" type="text" autocomplete="business" placeholder="Business" minlength="2"></label>
                           <br><br>
   
-                          <label>Mobile Phone Number:<br><input name="Mobile Phone Number" type="email" autocomplete="on" placeholder="###-###-####"></label>
+                          <label>Mobile Phone Number:<br><input name="Mobile Phone Number" type="email" autocomplete="on" placeholder="###-###-####" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required></label>
                           <br><br>
                     
+                          
+
+
+
                         <label>Select Membership Level Below:<br>
                         <select name="Level" id="Membershiplevel">
                             <option value="Gold">Gold</option>
@@ -194,7 +198,7 @@
                         </select></label><br><br> 
                         
                         <label>Please describe your business in the text box below:<br><textarea rows="5" cols="50" name="Description"
-                          id="Description" placeholder="Describe your business here"></textarea></label>
+                          id="Description" placeholder="Describe your business here" minlength="2"></textarea></label>
                         
                         <br><br> 
 
