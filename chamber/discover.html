@@ -100,6 +100,25 @@
       font-size: 30px;
     }
     </style>
+
+
+
+<style>
+.color img{
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -webkit-transition: all 1s ease;
+  }
+  
+  .color img:hover{
+  filter: grayscale(0%);
+  filter: gray;
+  -webkit-filter: grayscale(0%);
+  filter: none;
+  transition: 1s ease;
+  }
+</style>
+
 <!--above is for grid layout-->
 
 </head>
@@ -134,7 +153,7 @@
 
   <div class="grid-container">
     <div class="item1">1</div>
-    <div class="item2"><img src="https://derekjam.github.io/WDD231/chamber/data/phx.avif" alt="Phoenix1" style="width:100%; height:100%"></div>
+    <div class="color"></div>><img src="https://derekjam.github.io/WDD231/chamber/data/phx.avif" alt="Phoenix1" style="width:100%; height:100%"></div>
     <div class="item3">3</div>  
     <div class="item4"><img src="https://derekjam.github.io/WDD231/chamber/data/phx2.webp" alt="Phoenix2" style="width:100%"></div>
     <div class="item5">5</div>
