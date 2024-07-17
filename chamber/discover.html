@@ -1,22 +1,21 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8"
-    name="viewport"
-    content="width=device-width, 
-             initial-scale=1.0" />
-  <link rel="stylesheet" href="chamberdisc.css">
-  <title>Discover Exciting Phoenix, Arizona</title>
+<html><html lang="en">
+ <head>
+  <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="join.css">
+
+  <title>Join the Phoenix, AZ Chamber of Commerce</title>
   <link rel="icon" type="image/x-icon" href="https://derekjam.github.io/WDD231/chamber/data/favicon.ico">
 
   <!--below is code for background image on entire webpage-->
 <style>
      body {
-  background-image: url('https://www.visitarizona.com/imager/s3_us-west-1_amazonaws_com/aot-2020/images/Hero-Images/Phoenix-cityscape_603abd2f6782d45765146edc48eb2baa.jpg');
+  background-color: darkred;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-}
+} 
 </style>
 <!--above ends the code for background image on entire webpage-->
 
@@ -79,6 +78,28 @@
             }
 
 
+            button[type="submit"] {
+                padding: 15px;
+                border-radius: 10px;
+                border: none;
+                background-color: darkblue;
+                color: white;
+                cursor: pointer;
+                width: 25%;
+                font-size: 16px;
+            }
+
+            button[type="submit2"] {
+                padding: 10px;
+                border-radius: 10px;
+                border: none;
+                background-color: Orange;
+                color: white;
+                cursor: pointer;
+                width: 10%;
+                font-size: 14px;
+            }
+
 
 
   </style>
@@ -109,45 +130,90 @@
 
 <div id="content">
     
-    <div class='outer1'>
-      <div class='innerright1'><h1>Discover Exciting Phoenix, Arizona</h1></div>
-    </div>
-
-    <div class='outer1a'>
-        <div class='innerright1a'>
-            <img src="https://assets.simpleviewinc.com/simpleview/image/upload/c_limit,h_1200,q_75,w_1200/v1/clients/phoenix/Downtown_Phoenix_JamesStewart_exp07_01_2021_07394501-1ade-40e5-9b5f-a0c198501a43.jpg" width="550" height="auto">
-        </div>
-
-
     
 
-    </div>
+
+
+
 
     <div class='outer3'>
       
         <div class="headerdiv2">
             <div class="col-container2">
 
-                <div class="col2" style="background:orange">
-                    <div class="headerdiv2">
-                        <h1>Business 1</h1>
-                    </div>
-                    <p>1 info</p>
-                </div>
+                
               
-                <div class="col2" style="background:lightseagreen">
+                <div class="col2" style="background:darkred">
                     <div class="headerdiv2">
-                        <h1>Business 2</h1>
+                        <h1>To Join, Please Complete the Form Below</h1>
+
+                        <amp-img
+                        alt="phxpic"
+                        src="https://derekjam.github.io/WDD231/chamber/data/phx.avif"
+                        width="70%"
+                        height="auto"
+                        layout="responsive"
+                        >
+                        </amp-img>
+
                     </div>
-                    <p>2 info</p>
+                    <p>
+                                  
+                    </p>
+
+
+                    <p>
+                      <form action="/WDD231/chamber/thankyou.html" method="get">
+                        
+                          <label>First Name:<br><input name="First Name" autocomplete="given-name" placeholder="First Name" minlength="2"></label>
+                          <br><br>
+
+                          <label>Last Name:<br><input name="Last Name" autocomplete="given-name" placeholder="Last Name" minlength="2"></label>
+                          <br><br>
+
+                          <label>Email:<br><input name="Email" autocomplete="on" placeholder="example@example.com"></label>
+                          <br><br>
+                      
+                          <label>Organizational Title:<br><input name="Organization" type="text" autocomplete="on" placeholder="Organizational Title" required pattern="[a-zA-Z0-9]+"></label>
+                          <br><br>
+                   
+                          <label>Business Name:<br><input name="Business" type="text" autocomplete="business" placeholder="Business" minlength="2"></label>
+                          <br><br>
+  
+                          <label>Mobile Phone Number:<br><input name="Mobile Phone Number" type="phonenumber" autocomplete="on" placeholder="###-###-####" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required></label>
+                          <br><br>
+                    
+                          
+
+
+
+                        <label>Select Membership Level Below:<br>
+                        <select name="Level" id="Membershiplevel">
+                            <option value="Gold">Gold</option>
+                            <option value="Silver">Silver</option>
+                            <option value="Bronze">Bronze</option>
+                            <option value="NP">NP Membership (no fee)</option>
+                        </select></label><br><br> 
+                        
+                        <label>Please describe your business in the text box below:<br><textarea rows="5" cols="50" name="Description"
+                          id="Description" placeholder="Describe your business here" minlength="2"></textarea></label>
+                        
+                        <br><br> 
+
+                        <label>Membership Benefits:<br><textarea rows="5" cols="50" name="Benefits" id="Benefits" placeholder="Type membership benefits here"></textarea></label>
+                        <br><br><br><br>
+
+
+
+                          <button type="submit">Submit</button><br><br><br>
+                        </form>
+                    </p>
+                     
+                       
+
                 </div>
 
-                <div class="col2" style="background:green">
-                    <div class="headerdiv2">
-                        <h1>Business 3</h1>
-                    </div>
-                    <p>3 info</p>
-                </div>
+                
 
               </div>
     
@@ -182,4 +248,5 @@
 </div>
 
 </body>
+
 </html>
