@@ -24,4 +24,4 @@ document.addEventListener("DOMContentLoaded", function () {
             dataDisplay.appendChild(websiteElement);
         })
         .catch(error => console.error("Error fetching JSON data:", error));
-});
+}); 
