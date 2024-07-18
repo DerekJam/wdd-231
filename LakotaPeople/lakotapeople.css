@@ -36,7 +36,7 @@ body { margin: 0; padding: 0; }
 
   .innerleft1 {
     display: inline-block;
-    border: 0px solid #E24E1B;
+    border: 0px solid darkorange;
     padding: 1rem 1rem;
     vertical-align: middle;
   }
@@ -56,7 +56,7 @@ body { margin: 0; padding: 0; }
     padding: 2rem 2rem;
     text-align: center;
     font-family: 'Noto Sans';
-    background: #DA7635;
+    background: darkorange;
   }
 
 
@@ -88,7 +88,7 @@ body { margin: 0; padding: 0; }
     border: 0px solid red;
     padding: 1rem 1rem;
     vertical-align: middle;
-    background: #DA7635;
+    background: darkorange;
     height: 150px;
   }
 
@@ -97,6 +97,6 @@ body { margin: 0; padding: 0; }
     border: 0px solid red;
     padding: 1rem 1rem;
     vertical-align: middle;
-    background: #DA7635;
+    background: darkorange;
     height: 150px;
   }
