@@ -1,0 +1,24 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><html lang="en"></html><head>
+    <title>Thank You</title>
+    <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.css">
+</head>
+<body>
+    <div style="padding:20px;font-size:16px;">
+
+        <div>Thank you for submitting. The info requested is:</div>
+        <div style="padding-left: 10px; white-space: pre-line;" id="result"><br></div>
+    </div>
+
+
+
+<script>
+    const params = new URLSearchParams(window.location.search);
+   
+    var result = '<br />';
+    for (const [key, value] of params) {
+        result += (key + " = " + value + "<br />");
+    }
+
+    document.getElementById("result").innerHTML = result; 
+
+</script></body></html>
