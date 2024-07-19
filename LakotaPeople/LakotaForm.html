@@ -182,25 +182,21 @@
                     <p>
                       <form action="/WDD231/LakotaPeople/ThankYou.html" method="get">
                         
-                          <label>First Name:<br><input name="First Name" autocomplete="given-name" placeholder="First Name" minlength="2"></label>
+                          <label>First Name:<br><input name="First Name" autocomplete="given-name" placeholder="First Name" minlength="2" required pattern="[a-zA-Z0-9]+"></label>
                           <br><br>
 
-                          <label>Last Name:<br><input name="Last Name" autocomplete="given-name" placeholder="Last Name" minlength="2"></label>
+                          <label>Last Name:<br><input name="Last Name" autocomplete="given-name" placeholder="Last Name" minlength="2" required pattern="[a-zA-Z0-9]+"></label>
                           <br><br>
 
-                          <label>Email:<br><input name="Email" autocomplete="on" placeholder="example@example.com"></label>
+                          <label>Email:<br><input name="Email" autocomplete="on" placeholder="example@example.com" required pattern="[a-zA-Z0-9]+"></label>
                           <br><br>
-                      
-                          <label>Organizational Title:<br><input name="Organization" type="text" autocomplete="on" placeholder="Organizational Title" required pattern="[a-zA-Z0-9]+"></label>
-                          <br><br>
-                   
-                          
+                                                
                         <label>I would like to receive more info about:<br>
                         <select name="Request" id="InfoRequest">
                             <option value="Red Cloud">Red Cloud</option>
                             <option value="Sinte Gleska">Sinte Gleska</option>
                             <option value="Sitting Bull">Sitting Bull</option>
-                            <option value="Other">Other (specify other info box below)</option>
+                            <option value="Other">Other (specify in the request box below)</option>
                         </select></label><br><br> 
                         
                         <label>Please describe any other info you'd like to receive in the text box below:<br><textarea rows="5" cols="50" name="MoreInfo"
