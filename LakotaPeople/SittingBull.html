@@ -1,1 +1,230 @@
+<!DOCTYPE html>
+<html><html lang="en">
+<br>
+<head>
+  <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="lakotapeople.css">
+  <link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
+  <title>The Lakota People</title>
+  <link rel="icon" type="image/x-icon" href="https://derekjam.github.io/WDD231/chamber/data/favicon.ico">
 
+  <!--below is code for background image on entire webpage-->
+<style>
+     body {
+  background-image: url('https://www.keloland.com/wp-content/uploads/sites/103/2024/01/KELO-Pine-Ridge-Reservation-scenes.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+<!--above ends the code for background image on entire webpage-->
+
+</style>
+
+  <style>
+
+
+          div a {
+            text-decoration: none;
+            color: white;
+            font-size: 13px;
+            padding: 15px;
+            display:inline-block;
+          }
+          ul {
+            display: inline;
+            margin: 0;
+            padding: 0;
+          }
+          ul li {display: inline-block;}
+          ul li:hover {background: #DB995A;}
+          ul li:hover ul {display: block;}
+          ul li ul {
+            position: absolute;
+            width: 200px;
+            display: none;
+          }
+
+            
+          
+  </style>
+
+<style>
+  .grid-container4 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+  
+  .grid-container4 > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  
+  
+  </style>
+
+</head>
+<br>
+<div id="header">
+    <ul>
+      <li>
+        <a href="https://derekjam.github.io/WDD231/LakotaPeople/RedCloud.html">Red Cloud</a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="https://derekjam.github.io/WDD231/LakotaPeople/SinteGleska.html">Sinte Gleska</a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="https://derekjam.github.io/WDD231/LakotaPeople/SittingBull.html">Sitting Bull</a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="https://derekjam.github.io/WDD231/LakotaPeople/LakotaLinks.html">Links</a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="https://derekjam.github.io/WDD231/LakotaPeople/LakotaForm.html">Learn More</a>
+      </li>
+    </ul>
+</div>
+
+<div id="content">
+    
+    <div class='outer1'>
+      <div class='innerleft1'><a href="https://aktalakota.stjo.org/wp-content/uploads/2021/08/Red-Cloud_1.jpg"><img src="RC.webp" alt="Red Cloud" width="200" height="auto"></a></div>
+      <div class='innerright1'><h1 style="color:white;"><p>The Lakota People</p><p></p></h1></div>
+      <div class='innerleft1'><a href="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Sitting_Bull_by_D_F_Barry_ca_1883_Dakota_Territory.jpg/330px-Sitting_Bull_by_D_F_Barry_ca_1883_Dakota_Territory.jpg"><img src="SB.webp" alt="Sitting Bull" width="200" height="auto"></a></div>
+    </div>
+
+    <div class='outer2'>
+      <p style="color:white;">
+        The site provides photos and information relating to various famous Lakota people.         
+      </p>
+          </div>
+
+    <div class='outer3'>
+      <div class='innerleft3'>
+        <a href="https://derekjam.github.io/WDD231/LakotaPeople/RedCloud.html"><img src="RC.webp" alt="Click to view image" width="225" height="auto"></a>
+      </div>
+
+      <div class='innerleft4'>
+        <a href="https://derekjam.github.io/WDD231/LakotaPeople/SittingBull.html"><img src="SB.webp" alt="Sinte Gleska" width="200" height="auto"></a>
+        </div>
+
+      <div class='innerright3'>
+        <a href="https://derekjam.github.io/WDD231/LakotaPeople/SinteGleska.html"><img src="ST.webp" alt="Click to view image" width="225" height="auto"></a>
+        </div>
+
+      <div class='innerright4'><p style="color:white;">
+        To learn more about Red Cloud, Sinte Gleska/Spotted Tail, and Sitting Bull, either click the link at top or click the image directly above.
+      </p></div>
+      <br></br>
+            
+     
+
+
+
+      <div class='outer3'>
+                                        
+                                <!--Try HTML and JS for Greetings time stamped below-->
+                          <div>
+                            <script type = "text/javascript">
+                              var days = 730; // the cookie will expire = 2 years
+                              var lastvisit=new Object();
+                              var firstvisitmsg="<p style='font-size:18px; color:white; align:center'>Welcome to Lakota People page for the first time!</p> <p style='font-size:18px; color:white; align:center'>Enjoy!</p>"; 
+                              lastvisit.subsequentvisitmsg="<p style='font-size:18px; color:white'>Welcome back!</p> <p style='font-size:18px; color:white'>You last visited the <em>Lakota People</em> page on</p> <p style='font-size:18px; color:white;'>[date_displayed]</p>";
+                              
+                              lastvisit.getCookie=function(Name){ 
+                              var re=new RegExp(Name+"=[^;]+", "i"); 
+                              if (document.cookie.match(re)) 
+                              return document.cookie.match(re)[0].split("=")[1];
+                              return''; 
+                              }
+                              
+                              lastvisit.setCookie=function(name, value, days){ 
+                              var expireDate = new Date();
+                              
+                              var expstring=expireDate.setDate(expireDate.getDate()+parseInt(days));
+                              document.cookie = name+"="+value+"; expires="+expireDate.toGMTString()+"; path=/";
+                              }
+                              
+                              lastvisit.showmessage = function() {
+                              var wh = new Date();
+                              if (lastvisit.getCookie("visit_record") == "") { 
+                              lastvisit.setCookie("visit_record", wh, days); 
+                              document.write(firstvisitmsg);
+                              }
+                              
+                              else {
+                              var lv = lastvisit.getCookie("visit_record");
+                              var lvp = Date.parse(lv);
+                              var now = new Date();
+                              now.setTime(lvp);
+                              var day = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+                              var month = new Array ("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+                              var dd = now.getDate();
+                              var dy = now.getDay();
+                              dy = day[dy];
+                              var mn = now.getMonth();
+                              mn = month[mn];
+                              yy = now.getFullYear();
+                              var hh = now.getHours();
+                              var ampm = "AM";
+                              if (hh >= 12) {ampm = "PM"}
+                              if (hh >12){hh = hh - 12};
+                              if (hh == 0) {hh = 12}
+                              if (hh < 10) {hh = "0" + hh};
+                              var mins = now.getMinutes();
+                              if (mins < 10) {mins = "0"+ mins}
+                              var secs = now.getSeconds();
+                              if (secs < 10) {secs = "0" + secs}
+                              var dispDate = dy + ", " + mn + " " + dd + ", " + yy + " " + hh + ":" + mins + ":" + secs + " " + ampm
+                              document.write(lastvisit.subsequentvisitmsg.replace("\[date_displayed\]", dispDate))
+                              }
+                              
+                              lastvisit.setCookie("visit_record", wh, days);
+                              
+                              }
+                              
+                              lastvisit.showmessage();
+                              </script>
+                              
+                          </div>
+                        <!--END HTML and JS for Greetings time stamped above-->
+
+
+      </div>
+            
+    </div>
+
+    
+
+</div>
+
+<br></br>
+<br></br>
+<br></br>
+
+<div id="footer">
+  
+  <p id="demo">
+  <script>
+  const date = new Date(document.lastModified);
+  document.getElementById("demo").innerHTML = date;
+  </script> | ©2024 | Derek J. Steele | USA</p>
+</div>
+
+</body>
+</html>
+
+
+ 

@@ -1,1 +1,253 @@
+<!DOCTYPE html>
+<html><html lang="en">
+ <head>
+  <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="join.css">
+
+  <title>Join the Phoenix, AZ Chamber of Commerce</title>
+  <link rel="icon" type="image/x-icon" href="https://derekjam.github.io/WDD231/chamber/data/favicon.ico">
+
+  <!--below is code for background image on entire webpage-->
+<style>
+     body {
+  background-color: darkred;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+} 
+</style>
+<!--above ends the code for background image on entire webpage-->
+
+  <style>
+          div a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            padding: 15px;
+            display:inline-block;
+          }
+          ul {
+            display: inline;
+            margin: 0;
+            padding: 0;
+          }
+          ul li {display: inline-block;}
+          ul li:hover {background: lightskyblue;}
+          ul li:hover ul {display: block;}
+          ul li ul {
+            position: absolute;
+            width: 200px;
+            display: none;
+          }
+
+                    @media screen and (max-width: 500px) {
+            .navbar a {
+              float: none;
+              display: block;
+              width: 100%;
+              text-align: left;
+            }
+          }
+
+
+       
+            
+        .headerdiv2 {
+             padding-top: 5px;
+             padding-right: 15px;
+             padding-bottom: 5px;
+             padding-left: 15px;
+             text-align: center;
+             background: transparent;
+             color: white;
+             font-size: 14px;
+        }
+
+
+
+
+            .col-container2 {
+              display: table;
+              width: 100%;
+            }
+
+            .col2 {
+              display: table-cell;
+              padding: 16px;
+            }
+
+
+            button[type="submit"] {
+                padding: 15px;
+                border-radius: 10px;
+                border: none;
+                background-color: darkblue;
+                color: white;
+                cursor: pointer;
+                width: 25%;
+                font-size: 16px;
+            }
+
+            button[type="submit2"] {
+                padding: 10px;
+                border-radius: 10px;
+                border: none;
+                background-color: Orange;
+                color: white;
+                cursor: pointer;
+                width: 10%;
+                font-size: 14px;
+            }
+
+
+
+  </style>
+</head>
+<body>
+<div id="header">
+  <ul>
+    <li>
+    <a href="https://derekjam.github.io/WDD231/chamber">Home</a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="https://derekjam.github.io/WDD231/chamberdirectory/chamberdir.html">Directory</a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="https://derekjam.github.io/WDD231/chamber/join.html">Join</a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="https://derekjam.github.io/WDD231/chamber/discover.html">Discover</a>
+      </li>
+    </ul>
+</div>
+
+<div id="content">
+    
+    
+
+
+
+
+
+    <div class='outer3'>
+      
+        <div class="headerdiv2">
+            <div class="col-container2">
+
+                
+              
+                <div class="col2" style="background:darkred">
+                    <div class="headerdiv2">
+                        <h1>To Join, Please Complete the Form Below</h1>
+
+                        <amp-img
+                        alt="phxpic"
+                        src="https://derekjam.github.io/WDD231/chamber/data/phx.avif"
+                        width="70%"
+                        height="auto"
+                        layout="responsive"
+                        >
+                        </amp-img>
+
+                    </div>
+                    <p>
+                                  
+                    </p>
+
+
+                    <p>
+                      <form action="/WDD231/chamber/thankyou.html" method="get">
+                        
+                          <label>First Name:<br><input name="First Name" autocomplete="given-name" placeholder="First Name" minlength="2"></label>
+                          <br><br>
+
+                          <label>Last Name:<br><input name="Last Name" autocomplete="given-name" placeholder="Last Name" minlength="2"></label>
+                          <br><br>
+
+                          <label>Email:<br><input name="Email" autocomplete="on" placeholder="example@example.com"></label>
+                          <br><br>
+                      
+                          <label>Organizational Title:<br><input name="Organization" type="text" autocomplete="on" placeholder="Organizational Title" required pattern="[a-zA-Z0-9]+"></label>
+                          <br><br>
+                   
+                          <label>Business Name:<br><input name="Business" type="text" autocomplete="business" placeholder="Business" minlength="2"></label>
+                          <br><br>
+  
+                          <label>Mobile Phone Number:<br><input name="Mobile Phone Number" type="phonenumber" autocomplete="on" placeholder="###-###-####" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required></label>
+                          <br><br>
+                    
+                          
+
+
+
+                        <label>Select Membership Level Below:<br>
+                        <select name="Level" id="Membershiplevel">
+                            <option value="Gold">Gold</option>
+                            <option value="Silver">Silver</option>
+                            <option value="Bronze">Bronze</option>
+                            <option value="NP">NP Membership (no fee)</option>
+                        </select></label><br><br> 
+                        
+                        <label>Please describe your business in the text box below:<br><textarea rows="5" cols="50" name="Description"
+                          id="Description" placeholder="Describe your business here" minlength="2"></textarea></label>
+                        
+                        <br><br> 
+
+                        <label>Membership Benefits:<br><textarea rows="5" cols="50" name="Benefits" id="Benefits" placeholder="Type membership benefits here"></textarea></label>
+                        <br><br><br><br>
+
+
+
+                          <button type="submit">Submit</button><br><br><br>
+                        </form>
+                    </p>
+                     
+                       
+
+                </div>
+
+                
+
+              </div>
+    
+        </div>
+            
+        </div>
+    </div>
+
+    <div class='outer4'>
+      <div class='innerleft5'></div>
+      <div class='innerright5'></div>
+    </div>
+
+
+</div>
+
+<div id="footer">
+
+    <p id="demo">
+        <script>
+        const date = new Date(document.lastModified);
+        document.getElementById("demo").innerHTML = date;
+        </script> 
+        <a href="https://www.X.com"><img src="https://derekjam.github.io/WDD231/xwhite.png" alt="twitterx" style="width:14px;height:14px;"></a>
+        | 
+        <a href="https://www.Facebook.com"><img src="https://derekjam.github.io/WDD231/FacebookLogo.png" alt="facebook" style="width:16px;height:16px;"></a>
+        | 
+        <a href="https://www.LinkedIn.com"><img src="https://derekjam.github.io/WDD231/LinkedIn.png" alt="linkedin" style="width:16px;height:16px;"></a>  
+        | ©2024 Phoenix, AZ Chamber of Commerce | WDD231 Class Project | Derek J. Steele 
+      </p>
+      
+</div>
+
+</body>
+
+</html>
 
