@@ -123,5 +123,6 @@ body { margin: 0; padding: 0; }
     margin: 1rem;
     text-align: center;
     font-family: 'Noto Sans';
+    background: transparent;
     font-size: small;
   }
