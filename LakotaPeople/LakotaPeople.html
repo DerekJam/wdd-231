@@ -78,23 +78,18 @@
 
 
 
+  .hide {
+  display: none;
+}
 
-  .tooltip-wrap {
-    position: relative;
-  }
-  .tooltip-wrap .tooltip-content {
-    display: none;
-    position: absolute;
-    bottom: 5%;
-    left: 55%;
-    right: 5%;
-    background-color: #fff;
-    padding: .5em;
-    width: 18em;
-  }
-  .tooltip-wrap:hover .tooltip-content {
-    display: block;
-  }
+.myDIV:hover + .hide {
+  display: block;
+  color: red;
+}
+
+
+
+
 
 
 
@@ -177,7 +172,10 @@
           </div> 
         </div>
 
-      
+        <div class="myDIV"><img src="https://derekjam.github.io/WDD231/LakotaPeople/SinteGleska2.webp" alt="Spotted Tail" width="200px" height="auto" loading="lazy"></div>
+        <div class="hide">Click to learn more about Spotted Tail</div>
+
+
       <br></br>
             
      
