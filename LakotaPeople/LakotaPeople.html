@@ -77,15 +77,42 @@
 
 
 
+<!--Hover CSS-->
+  /* Parent Container*/
+  .content_img{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-rght: 10px;
+  }
 
-  
-  
-  li2 > img {
-  max-width: 40px;
-}
+  /*Child Container*/
+  .content_img div{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: black;
+    color: white;
+    margin-bottom: 5px;
+    font-family: sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear;
+    transition: visibility 0s; opacity 0.5s linear;
+  }
 
-
-
+  /*Hover on Parent Container*/
+  .content_img:hover{
+    cursor: pointer;
+  }
+  .content_img:hover div{
+    width: 150px;
+    padding: 8px 15px;
+    visibility: visible;
+    opacity: 0.7;
+  }
+<!--End Hover CSS-->
 
 
 
@@ -173,17 +200,11 @@
 
 
 
-
-
-        <li2>
-          <img src="https://derekjam.github.io/WDD231/LakotaPeople/SinteGleska2.webp" alt="adventure" >
-          <span class="large">
-            <img src="https://derekjam.github.io/WDD231/LakotaPeople/SinteGleska2.webp" class="large-image" alt="adventure" >
-          </span>
-        </li2>
-
-
-
+<div class="content_img"
+<img src='https://derekjam.github.io/WDD231/LakotaPeople/SittingBull2.webp' width='100%' height='100%'>
+<div>Image 1 text</div>
+</div>
+  
 
       <br></br>
             
