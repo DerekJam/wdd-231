@@ -1,4 +1,4 @@
-body { margin: 0; padding: 0; background: darkgoldenrod;}
+body { margin: 0; padding: 0; background: darkgoldenrod; font-family: Calibri, sans-serif }
 
 #header {
   position: fixed;
