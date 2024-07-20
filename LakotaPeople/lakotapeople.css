@@ -7,7 +7,7 @@ body { margin: 0; padding: 0; }
   height: 50px;
   background: #654236;
   text-align: center;
-  font-family: 'Optima';
+  font-family: 'Noto Sans';
 }
 
 #content {
@@ -23,7 +23,7 @@ body { margin: 0; padding: 0; }
     text-align: center;
     color: white;
     font-size: 13px;
-    font-family: 'Optima';
+    font-family: 'Noto Sans';
 }
 
 .outer1 {
@@ -31,7 +31,7 @@ body { margin: 0; padding: 0; }
     margin: 1rem;
     padding: 1rem 1rem;
     text-align: center;
-    font-family: 'Optima';
+    font-family: 'Noto Sans';
   }
 
   .innerleft1 {
@@ -53,7 +53,7 @@ body { margin: 0; padding: 0; }
 .outer2 {
     margin: 1rem;
     text-align: center;
-    font-family: 'Optima';
+    font-family: 'Noto Sans';
     background: darkorange;
     font-size: small;
   }
@@ -65,7 +65,7 @@ body { margin: 0; padding: 0; }
     margin: 1rem;
     padding: 2rem 2rem;
     text-align: center;
-    font-family: 'Optima';
+    font-family: 'Noto Sans';
   }
 
   .innerleft3 {
@@ -119,4 +119,10 @@ body { margin: 0; padding: 0; }
     width: auto;
   }
 
- 
+  .outermid {
+    margin: 1rem;
+    text-align: center;
+    font-family: 'Noto Sans';
+    background: transparent;
+    font-size: small;
+  }
