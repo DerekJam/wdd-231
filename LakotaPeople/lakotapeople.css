@@ -119,3 +119,9 @@ body { margin: 0; padding: 0; }
     width: auto;
   }
 
+  .outermid {
+    margin: 1rem;
+    text-align: center;
+    font-family: 'Noto Sans';
+    font-size: small;
+  }
