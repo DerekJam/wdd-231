@@ -1,4 +1,4 @@
-body { margin: 0; padding: 0; background: #FF5733;}
+body { margin: 0; padding: 0; background: darkgoldenrod;}
 
 #header {
   position: fixed;
@@ -27,7 +27,6 @@ body { margin: 0; padding: 0; background: #FF5733;}
 }
 
 .outer1 {
-    border: 0px solid black;
     margin: 1rem;
     padding: 1rem 1rem;
     text-align: center;
@@ -36,14 +35,12 @@ body { margin: 0; padding: 0; background: #FF5733;}
 
   .innerleft1 {
     display: inline-block;
-    border: 0em solid darkorange;
     padding: 1rem 1rem;
     vertical-align: middle;
   }
 
   .innerright1 {
     display: inline-block;
-    border: 0em solid red;
     padding: 1rem 1rem;
     vertical-align: middle;
   }
@@ -54,14 +51,12 @@ body { margin: 0; padding: 0; background: #FF5733;}
     margin: 1rem;
     text-align: center;
     font-family: 'Noto Sans';
-    background: transparent;
     font-size: small;
   }
 
 
 
   .outer3 {
-    border: 0px solid black;
     margin: 1rem;
     padding: 2rem 2rem;
     text-align: center;
@@ -70,21 +65,18 @@ body { margin: 0; padding: 0; background: #FF5733;}
 
   .innerleft3 {
     display: inline-block;
-    border: 0em solid red;
     padding: 1rem 1rem;
     vertical-align: middle;
   }
 
   .innerright3 {
     display: inline-block;
-    border: 0em solid red;
     padding: 1rem 1rem;
     vertical-align: middle;
   }
 
   .innerleft4 {
     display: inline-block;
-    border: 0em solid red;
     padding: 1rem 1rem;
     vertical-align: middle;
   }
@@ -94,27 +86,22 @@ body { margin: 0; padding: 0; background: #FF5733;}
     border: 10em solid red;
     padding: 1rem 1rem;
     vertical-align: middle;
-    background: darkorange;
     height: 10px;
     width: auto;
   }
 
   .innerleft11 {
     display: inline-block;
-    border: 0em solid red;
     padding: 1rem 1rem;
     vertical-align: middle;
-    background: darkorange;
     height: 150px;
     width: auto;
   }
 
   .innerright11 {
     display: inline-block;
-    border: 0em solid red;
     padding: 1rem 1rem;
     vertical-align: middle;
-    background: darkorange;
     height: 150px;
     width: auto;
   }
