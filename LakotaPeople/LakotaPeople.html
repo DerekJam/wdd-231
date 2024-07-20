@@ -74,6 +74,30 @@
     font-size: 1.875em;
   }
   
+
+
+
+
+
+  .tooltip-wrap {
+    position: relative;
+  }
+  .tooltip-wrap .tooltip-content {
+    display: none;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    right: 5%;
+    background-color: #fff;
+    padding: .5em;
+    min-width: 10rem;
+  }
+  .tooltip-wrap:hover .tooltip-content {
+    display: block;
+  }
+
+
+
   
   </style>
 
@@ -147,9 +171,9 @@
 
 
 
-      
+
       <div class="tooltip-wrap">
-        <img src="/some/image/file.jpg" alt="Some Image" />
+        <img src="/LakotaPeople/RC.webp" alt="Some Image" />
         <div class="tooltip-content">
           Here is some content for the tooltip
         </div> 
