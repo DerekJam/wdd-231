@@ -54,7 +54,7 @@ body { margin: 0; padding: 0; background: #FF5733;}
     margin: 1rem;
     text-align: center;
     font-family: 'Noto Sans';
-    background: darkorange;
+    background: transparent;
     font-size: small;
   }
 
@@ -91,7 +91,7 @@ body { margin: 0; padding: 0; background: #FF5733;}
 
   .innerright4 {
     display: inline-block;
-    border: 0em solid red;
+    border: 10em solid red;
     padding: 1rem 1rem;
     vertical-align: middle;
     background: darkorange;
@@ -119,13 +119,7 @@ body { margin: 0; padding: 0; background: #FF5733;}
     width: auto;
   }
 
-  .outermid {
-    margin: 1rem;
-    text-align: center;
-    font-family: 'Noto Sans';
-    background: transparent;
-    font-size: small;
-  }
+ 
 
 
 
