@@ -78,16 +78,23 @@
 
 
 
-  .hide {
+  
+  .hoverinfo {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 28px;
+  color: #ffffff;
+  cursor: pointer;
+}
+.hoverinfo p {
   display: none;
+  color: #000000;
 }
-
-.myDIV:hover + .hide {
+.hoverinfo:hover p {
+  background-color: rgba(255, 255, 255, 0.7);
   display: block;
-  color: red;
 }
-
-
 
 
 
@@ -172,8 +179,21 @@
           </div> 
         </div>
 
-        <div class="myDIV"><img src="https://derekjam.github.io/WDD231/LakotaPeople/SinteGleska2.webp" alt="Spotted Tail" width="200px" height="auto" loading="lazy"></div>
-        <div class="hide">Click to learn more about Spotted Tail</div>
+
+
+
+
+
+        <div>
+          <img src="https://derekjam.github.io/WDD231/LakotaPeople/SinteGleska2.webp" />
+          <div class="hoverinfo"> <span>i</span>
+        
+            <p>3
+              <br>lines
+              <br>of text</p>
+          </div>
+        </div>
+
 
 
       <br></br>
